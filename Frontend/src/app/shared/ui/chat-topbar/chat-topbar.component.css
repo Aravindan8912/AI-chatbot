@@ -1,0 +1,30 @@
+.topbar {
+  height: 3.2rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.2);
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(2, 6, 23, 0.28);
+}
+
+.title {
+  margin: 0;
+  color: #e2e8f0;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.actions button {
+  border: 1px solid rgba(148, 163, 184, 0.24);
+  background: rgba(15, 23, 42, 0.5);
+  color: #cbd5e1;
+  border-radius: 0.45rem;
+  width: 1.8rem;
+  height: 1.8rem;
+}

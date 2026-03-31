@@ -1,0 +1,16 @@
+<footer class="composer">
+  <div class="composer-box">
+    <textarea
+      [ngModel]="message"
+      (ngModelChange)="onModelChange($event)"
+      (keydown)="onKeydown($event)"
+      rows="1"
+      [placeholder]="'Message ' + productName + '...'"
+      [disabled]="loading"
+    ></textarea>
+    <button type="button" (click)="sendMessage.emit()" [disabled]="loading || !message.trim()">
+      {{ loading ? 'Sending...' : 'Send' }}
+    </button>
+  </div>
+  <p class="composer-hint">{{ productName }} may make mistakes. Verify important information.</p>
+</footer>

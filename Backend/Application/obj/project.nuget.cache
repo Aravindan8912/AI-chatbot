@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "g16f5mHOb+E=",
+  "success": true,
+  "projectFilePath": "D:\\Chat_bot\\Backend\\Application\\Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\aravi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",
+    "C:\\Users\\aravi\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\10.0.0\\microsoft.extensions.logging.abstractions.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

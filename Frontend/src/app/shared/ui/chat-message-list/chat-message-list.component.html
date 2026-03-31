@@ -1,0 +1,15 @@
+<main class="messages" aria-live="polite">
+  <div
+    class="message-row"
+    *ngFor="let item of messages"
+    [class.message-user]="item.role === 'user'"
+    [class.message-assistant]="item.role === 'assistant'"
+  >
+    <article class="message-bubble">
+      <p>{{ item.content }}</p>
+    </article>
+  </div>
+
+  <p class="status" *ngIf="loading">Thinking...</p>
+  <p class="error" *ngIf="error" role="alert">{{ error }}</p>
+</main>

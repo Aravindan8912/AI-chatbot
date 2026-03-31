@@ -1,0 +1,15 @@
+<section class="chat-shell">
+  <app-chat-sidebar [productName]="productName" />
+
+  <section class="chat-main">
+    <app-chat-topbar [productName]="productName" />
+    <app-chat-message-list [messages]="messages" [loading]="loading" [error]="error" />
+    <app-chat-composer
+      [productName]="productName"
+      [message]="message"
+      [loading]="loading"
+      (messageChange)="message = $event"
+      (sendMessage)="send()"
+    />
+  </section>
+</section>

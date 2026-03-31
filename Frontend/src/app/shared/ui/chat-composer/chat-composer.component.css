@@ -1,0 +1,53 @@
+.composer {
+  padding: 0.75rem 1rem 1rem;
+  border-top: 1px solid rgba(148, 163, 184, 0.2);
+  background: rgba(2, 6, 23, 0.28);
+}
+
+.composer-box {
+  display: flex;
+  gap: 0.6rem;
+  align-items: flex-end;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  border-radius: 0.9rem;
+  padding: 0.5rem;
+  background: rgba(15, 23, 42, 0.88);
+}
+
+textarea {
+  flex: 1;
+  resize: none;
+  border: 0;
+  background: transparent;
+  color: #f8fafc;
+  min-height: 2.6rem;
+  max-height: 9rem;
+  padding: 0.35rem 0.45rem;
+  font: inherit;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  padding: 0.5rem 0.95rem;
+  border-radius: 0.65rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  background: linear-gradient(180deg, #38bdf8, #0ea5e9);
+  color: #082f49;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.composer-hint {
+  margin: 0.45rem 0 0;
+  text-align: center;
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
