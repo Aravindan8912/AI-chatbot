@@ -1,0 +1,87 @@
+2026-04-02 14:36:28.474 +05:30 [INF] Now listening on: http://localhost:5000
+2026-04-02 14:36:28.503 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-02 14:36:28.505 +05:30 [INF] Hosting environment: Development
+2026-04-02 14:36:28.506 +05:30 [INF] Content root path: D:\New folder\Backend\Api
+2026-04-02 14:37:06.735 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/chat - application/json 17
+2026-04-02 14:37:06.764 +05:30 [INF] CORS policy execution successful.
+2026-04-02 14:37:06.767 +05:30 [INF] Executing endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:37:06.789 +05:30 [INF] Route matched with {action = "Ask", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.ChatResponseDto]] Ask(Application.DTOs.ChatRequestDto, System.Threading.CancellationToken) on controller Api.Controllers.ChatController (Api).
+2026-04-02 14:37:06.825 +05:30 [INF] Chat request received. MessageLength=3
+2026-04-02 14:37:06.837 +05:30 [INF] Message classified as casual greeting
+2026-04-02 14:37:06.841 +05:30 [INF] Executing OkObjectResult, writing value of type 'Application.DTOs.ChatResponseDto'.
+2026-04-02 14:37:06.855 +05:30 [INF] Executed action Api.Controllers.ChatController.Ask (Api) in 60.1431ms
+2026-04-02 14:37:06.856 +05:30 [INF] Executed endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:37:06.859 +05:30 [INF] HTTP POST /api/chat responded 200 in 95.9150 ms
+2026-04-02 14:37:06.862 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/chat - 200 null application/json; charset=utf-8 127.7962ms
+2026-04-02 14:37:14.382 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/chat - application/json 31
+2026-04-02 14:37:14.385 +05:30 [INF] CORS policy execution successful.
+2026-04-02 14:37:14.386 +05:30 [INF] Executing endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:37:14.387 +05:30 [INF] Route matched with {action = "Ask", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.ChatResponseDto]] Ask(Application.DTOs.ChatRequestDto, System.Threading.CancellationToken) on controller Api.Controllers.ChatController (Api).
+2026-04-02 14:37:14.391 +05:30 [INF] Chat request received. MessageLength=17
+2026-04-02 14:37:14.408 +05:30 [INF] Start processing HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:37:14.409 +05:30 [INF] Sending HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:37:15.181 +05:30 [INF] Received HTTP response headers after 768.4479ms - 401
+2026-04-02 14:37:15.183 +05:30 [INF] End processing HTTP request after 775.7843ms - 401
+2026-04-02 14:37:15.187 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-04-02 14:37:15.199 +05:30 [INF] Executed action Api.Controllers.ChatController.Ask (Api) in 809.252ms
+2026-04-02 14:37:15.200 +05:30 [INF] Executed endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:37:15.202 +05:30 [ERR] HTTP POST /api/chat responded 502 in 817.1876 ms
+2026-04-02 14:37:15.205 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/chat - 502 null application/problem+json; charset=utf-8 823.7232ms
+2026-04-02 14:39:05.783 +05:30 [INF] Application is shutting down...
+2026-04-02 14:39:22.455 +05:30 [INF] Now listening on: http://localhost:5000
+2026-04-02 14:39:22.482 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-02 14:39:22.484 +05:30 [INF] Hosting environment: Development
+2026-04-02 14:39:22.484 +05:30 [INF] Content root path: D:\New folder\Backend\Api
+2026-04-02 14:39:28.427 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/chat - application/json 31
+2026-04-02 14:39:28.448 +05:30 [INF] CORS policy execution successful.
+2026-04-02 14:39:28.452 +05:30 [INF] Executing endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:39:28.476 +05:30 [INF] Route matched with {action = "Ask", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.ChatResponseDto]] Ask(Application.DTOs.ChatRequestDto, System.Threading.CancellationToken) on controller Api.Controllers.ChatController (Api).
+2026-04-02 14:39:28.513 +05:30 [INF] Chat request received. MessageLength=17
+2026-04-02 14:39:28.542 +05:30 [INF] Start processing HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:39:28.546 +05:30 [INF] Sending HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:39:29.853 +05:30 [INF] Received HTTP response headers after 1304.5059ms - 429
+2026-04-02 14:39:29.856 +05:30 [INF] End processing HTTP request after 1315.6842ms - 429
+2026-04-02 14:39:29.862 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-04-02 14:39:29.886 +05:30 [INF] Executed action Api.Controllers.ChatController.Ask (Api) in 1405.305ms
+2026-04-02 14:39:29.887 +05:30 [INF] Executed endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:39:29.891 +05:30 [ERR] HTTP POST /api/chat responded 502 in 1443.7317 ms
+2026-04-02 14:39:29.896 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/chat - 502 null application/problem+json; charset=utf-8 1470.5511ms
+2026-04-02 14:41:44.445 +05:30 [INF] Application is shutting down...
+2026-04-02 14:41:48.303 +05:30 [INF] Now listening on: http://localhost:5000
+2026-04-02 14:41:48.327 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-02 14:41:48.329 +05:30 [INF] Hosting environment: Development
+2026-04-02 14:41:48.329 +05:30 [INF] Content root path: D:\New folder\Backend\Api
+2026-04-02 14:41:54.597 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/chat - application/json 31
+2026-04-02 14:41:54.620 +05:30 [INF] CORS policy execution successful.
+2026-04-02 14:41:54.625 +05:30 [INF] Executing endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:41:54.646 +05:30 [INF] Route matched with {action = "Ask", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.ChatResponseDto]] Ask(Application.DTOs.ChatRequestDto, System.Threading.CancellationToken) on controller Api.Controllers.ChatController (Api).
+2026-04-02 14:41:54.683 +05:30 [INF] Chat request received. MessageLength=17
+2026-04-02 14:41:54.714 +05:30 [INF] Start processing HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:41:54.716 +05:30 [INF] Sending HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:41:55.882 +05:30 [INF] Received HTTP response headers after 1164.0625ms - 429
+2026-04-02 14:41:55.885 +05:30 [INF] End processing HTTP request after 1172.4216ms - 429
+2026-04-02 14:41:55.892 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-04-02 14:41:55.918 +05:30 [INF] Executed action Api.Controllers.ChatController.Ask (Api) in 1268.143ms
+2026-04-02 14:41:55.921 +05:30 [INF] Executed endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:41:55.924 +05:30 [ERR] HTTP POST /api/chat responded 502 in 1305.2436 ms
+2026-04-02 14:41:55.928 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/chat - 502 null application/problem+json; charset=utf-8 1332.1379ms
+2026-04-02 14:42:44.697 +05:30 [INF] Application is shutting down...
+2026-04-02 14:42:48.401 +05:30 [INF] Now listening on: http://localhost:5000
+2026-04-02 14:42:48.428 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-02 14:42:48.430 +05:30 [INF] Hosting environment: Development
+2026-04-02 14:42:48.431 +05:30 [INF] Content root path: D:\New folder\Backend\Api
+2026-04-02 14:42:54.250 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/chat - application/json 31
+2026-04-02 14:42:54.273 +05:30 [INF] CORS policy execution successful.
+2026-04-02 14:42:54.279 +05:30 [INF] Executing endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:42:54.298 +05:30 [INF] Route matched with {action = "Ask", controller = "Chat"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Application.DTOs.ChatResponseDto]] Ask(Application.DTOs.ChatRequestDto, System.Threading.CancellationToken) on controller Api.Controllers.ChatController (Api).
+2026-04-02 14:42:54.335 +05:30 [INF] Chat request received. MessageLength=17
+2026-04-02 14:42:54.365 +05:30 [INF] Start processing HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:42:54.367 +05:30 [INF] Sending HTTP request POST https://api.openai.com/v1/chat/completions
+2026-04-02 14:42:55.180 +05:30 [INF] Received HTTP response headers after 809.7299ms - 401
+2026-04-02 14:42:55.182 +05:30 [INF] End processing HTTP request after 819.01ms - 401
+2026-04-02 14:42:55.189 +05:30 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2026-04-02 14:42:55.212 +05:30 [INF] Executed action Api.Controllers.ChatController.Ask (Api) in 909.0924ms
+2026-04-02 14:42:55.215 +05:30 [INF] Executed endpoint 'Api.Controllers.ChatController.Ask (Api)'
+2026-04-02 14:42:55.218 +05:30 [ERR] HTTP POST /api/chat responded 502 in 946.1199 ms
+2026-04-02 14:42:55.222 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5000/api/chat - 502 null application/problem+json; charset=utf-8 972.4809ms
+2026-04-02 14:44:27.799 +05:30 [INF] Application is shutting down...

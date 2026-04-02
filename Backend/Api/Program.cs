@@ -3,6 +3,7 @@ using Application.Interfaces;
 using Application.Services;
 using DotNetEnv;
 using Infrastructure.OpenAI;
+using Infrastructure.Web;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -76,6 +77,7 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddScoped<IChatService, ChatService>();
 builder.Services.AddHttpClient<IOpenAIClient, OpenAIClient>();
+builder.Services.AddHttpClient<IWebsiteAnalyzer, WebsiteAnalyzer>();
 
 var app = builder.Build();
 

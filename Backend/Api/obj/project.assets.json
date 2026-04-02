@@ -15,6 +15,19 @@
           "lib/netstandard1.3/DotNetEnv.dll": {}
         }
       },
+      "HtmlAgilityPack/1.12.4": {
+        "type": "package",
+        "compile": {
+          "lib/net7.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net7.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
         "type": "package",
         "build": {
@@ -336,6 +349,51 @@
         "dotnetenv.3.1.1.nupkg.sha512",
         "dotnetenv.nuspec",
         "lib/netstandard1.3/DotNetEnv.dll"
+      ]
+    },
+    "HtmlAgilityPack/1.12.4": {
+      "sha512": "ljqvBabvFwKoLniuoQKO8b5bJfJweKLs4fUNS/V5dsvpo0A8MlJqxxn9XVmP2DaskbUXty6IYaWAi1SArGIMeQ==",
+      "type": "package",
+      "path": "htmlagilitypack/1.12.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.12.4.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/net7.0/HtmlAgilityPack.deps.json",
+        "lib/net7.0/HtmlAgilityPack.dll",
+        "lib/net7.0/HtmlAgilityPack.pdb",
+        "lib/net7.0/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri",
+        "readme.md"
       ]
     },
     "Microsoft.Extensions.ApiDescription.Server/6.0.5": {
@@ -991,6 +1049,7 @@
     "net10.0": [
       "Application >= 1.0.0",
       "DotNetEnv >= 3.1.1",
+      "HtmlAgilityPack >= 1.12.4",
       "Infrastructure >= 1.0.0",
       "Serilog.AspNetCore >= 9.0.0",
       "Serilog.Sinks.Console >= 6.0.0",
@@ -1004,11 +1063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Chat_bot\\Backend\\Api\\Api.csproj",
+      "projectUniqueName": "D:\\New folder\\Backend\\Api\\Api.csproj",
       "projectName": "Api",
-      "projectPath": "D:\\Chat_bot\\Backend\\Api\\Api.csproj",
+      "projectPath": "D:\\New folder\\Backend\\Api\\Api.csproj",
       "packagesPath": "C:\\Users\\aravi\\.nuget\\packages\\",
-      "outputPath": "D:\\Chat_bot\\Backend\\Api\\obj\\",
+      "outputPath": "D:\\New folder\\Backend\\Api\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\aravi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -1023,11 +1082,11 @@
         "net10.0": {
           "targetAlias": "net10.0",
           "projectReferences": {
-            "D:\\Chat_bot\\Backend\\Application\\Application.csproj": {
-              "projectPath": "D:\\Chat_bot\\Backend\\Application\\Application.csproj"
+            "D:\\New folder\\Backend\\Application\\Application.csproj": {
+              "projectPath": "D:\\New folder\\Backend\\Application\\Application.csproj"
             },
-            "D:\\Chat_bot\\Backend\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Chat_bot\\Backend\\Infrastructure\\Infrastructure.csproj"
+            "D:\\New folder\\Backend\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\New folder\\Backend\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -1051,6 +1110,10 @@
           "DotNetEnv": {
             "target": "Package",
             "version": "[3.1.1, )"
+          },
+          "HtmlAgilityPack": {
+            "target": "Package",
+            "version": "[1.12.4, )"
           },
           "Serilog.AspNetCore": {
             "target": "Package",

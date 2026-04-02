@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "CjcvPwVAq60=",
+  "dgSpecHash": "WN7XEJp65Gw=",
   "success": true,
-  "projectFilePath": "D:\\Chat_bot\\Backend\\Api\\Api.csproj",
+  "projectFilePath": "D:\\New folder\\Backend\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aravi\\.nuget\\packages\\dotnetenv\\3.1.1\\dotnetenv.3.1.1.nupkg.sha512",
+    "C:\\Users\\aravi\\.nuget\\packages\\htmlagilitypack\\1.12.4\\htmlagilitypack.1.12.4.nupkg.sha512",
     "C:\\Users\\aravi\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "C:\\Users\\aravi\\.nuget\\packages\\microsoft.extensions.dependencymodel\\9.0.0\\microsoft.extensions.dependencymodel.9.0.0.nupkg.sha512",
     "C:\\Users\\aravi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
