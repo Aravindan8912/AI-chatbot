@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Chat_bot\\Backend\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\New folder\\Backend\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\Chat_bot\\Backend\\Application\\Application.csproj": {
+    "D:\\New folder\\Backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Chat_bot\\Backend\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\New folder\\Backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Chat_bot\\Backend\\Application\\Application.csproj",
+        "projectPath": "D:\\New folder\\Backend\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\aravi\\.nuget\\packages\\",
-        "outputPath": "D:\\Chat_bot\\Backend\\Application\\obj\\",
+        "outputPath": "D:\\New folder\\Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aravi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -343,14 +343,14 @@
         }
       }
     },
-    "D:\\Chat_bot\\Backend\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\New folder\\Backend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Chat_bot\\Backend\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\New folder\\Backend\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "D:\\Chat_bot\\Backend\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\New folder\\Backend\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\aravi\\.nuget\\packages\\",
-        "outputPath": "D:\\Chat_bot\\Backend\\Infrastructure\\obj\\",
+        "outputPath": "D:\\New folder\\Backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aravi\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -365,8 +365,8 @@
           "net10.0": {
             "targetAlias": "net10.0",
             "projectReferences": {
-              "D:\\Chat_bot\\Backend\\Application\\Application.csproj": {
-                "projectPath": "D:\\Chat_bot\\Backend\\Application\\Application.csproj"
+              "D:\\New folder\\Backend\\Application\\Application.csproj": {
+                "projectPath": "D:\\New folder\\Backend\\Application\\Application.csproj"
               }
             }
           }

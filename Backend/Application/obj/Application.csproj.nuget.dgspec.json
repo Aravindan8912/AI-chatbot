@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Chat_bot\\Backend\\Application\\Application.csproj": {}
+    "D:\\New folder\\Backend\\Application\\Application.csproj": {}
   },
   "projects": {
-    "D:\\Chat_bot\\Backend\\Application\\Application.csproj": {
+    "D:\\New folder\\Backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Chat_bot\\Backend\\Application\\Application.csproj",
+        "projectUniqueName": "D:\\New folder\\Backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Chat_bot\\Backend\\Application\\Application.csproj",
+        "projectPath": "D:\\New folder\\Backend\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\aravi\\.nuget\\packages\\",
-        "outputPath": "D:\\Chat_bot\\Backend\\Application\\obj\\",
+        "outputPath": "D:\\New folder\\Backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\aravi\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -1,7 +1,7 @@
 :host {
   display: block;
-  min-height: 100vh;
-  color: #f8fafc;
+  height: 100vh;
+  color: #0f172a;
 }
 
 .app-shell {
@@ -10,7 +10,5 @@
   padding: 0;
   justify-content: stretch;
   align-items: stretch;
-  background:
-    radial-gradient(circle at top, rgba(56, 189, 248, 0.25), transparent 40%),
-    linear-gradient(180deg, #0f172a 0%, #111827 100%);
+  background: #f7f8fc;
 }

@@ -1,14 +1,44 @@
 <main class="messages" aria-live="polite">
-  <div
-    class="message-row"
-    *ngFor="let item of messages"
-    [class.message-user]="item.role === 'user'"
-    [class.message-assistant]="item.role === 'assistant'"
-  >
-    <article class="message-bubble">
-      <p>{{ item.content }}</p>
-    </article>
+  <div class="empty-state" *ngIf="messages.length === 0">
+    <div class="hero-icon">✦</div>
+    <h1>How can I assist you today?</h1>
+    <p class="subtitle">Your sophisticated partner for research, creative writing, and complex problem-solving.</p>
+    <div class="suggestions">
+      <article class="card">
+        <h3>Explain quantum physics</h3>
+        <p>Understand complex concepts through simple metaphor and clear examples.</p>
+      </article>
+      <article class="card">
+        <h3>Write a poem</h3>
+        <p>Generate evocative verse and refine each line with a creative tone.</p>
+      </article>
+      <article class="card">
+        <h3>Debug my code</h3>
+        <p>Find logical errors and optimize performance with practical fixes.</p>
+      </article>
+      <article class="card">
+        <h3>Strategic Brainstorming</h3>
+        <p>Generate innovative business ideas for a sustainable tech startup.</p>
+      </article>
+      <article class="card">
+        <h3>Plan a trip</h3>
+        <p>Curate a seven-day cultural tour of Kyoto tailored to your interests.</p>
+      </article>
+    </div>
   </div>
+
+  <ng-container *ngIf="messages.length > 0">
+    <div
+      class="message-row"
+      *ngFor="let item of messages"
+      [class.message-user]="item.role === 'user'"
+      [class.message-assistant]="item.role === 'assistant'"
+    >
+      <article class="message-bubble">
+        <p>{{ item.content }}</p>
+      </article>
+    </div>
+  </ng-container>
 
   <p class="status" *ngIf="loading">Thinking...</p>
   <p class="error" *ngIf="error" role="alert">{{ error }}</p>

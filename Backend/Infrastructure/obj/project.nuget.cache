@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "elkb0p3TDtw=",
+  "dgSpecHash": "LujC3ltaVak=",
   "success": true,
-  "projectFilePath": "D:\\Chat_bot\\Backend\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "D:\\New folder\\Backend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aravi\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\aravi\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\10.0.0\\microsoft.extensions.dependencyinjection.abstractions.10.0.0.nupkg.sha512",

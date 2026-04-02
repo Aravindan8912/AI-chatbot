@@ -33,13 +33,7 @@ export class ChatComponent {
   message = '';
   error = '';
   loading = false;
-  messages: ChatMessage[] = [
-    {
-      role: 'assistant',
-      content:
-        "Hi, I'm Tree AI. Tell me what you want to work on, and I'll help you get there.",
-    },
-  ];
+  messages: ChatMessage[] = [];
 
   private static extractReply(res: unknown): string {
     if (typeof res === 'string') return res.trim();

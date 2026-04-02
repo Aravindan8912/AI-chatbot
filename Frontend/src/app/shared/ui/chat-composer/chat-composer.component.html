@@ -1,5 +1,6 @@
 <footer class="composer">
   <div class="composer-box">
+    <span class="mic-icon">◔</span>
     <textarea
       [ngModel]="message"
       (ngModelChange)="onModelChange($event)"
@@ -9,8 +10,8 @@
       [disabled]="loading"
     ></textarea>
     <button type="button" (click)="sendMessage.emit()" [disabled]="loading || !message.trim()">
-      {{ loading ? 'Sending...' : 'Send' }}
+      {{ loading ? '...' : '↑' }}
     </button>
   </div>
-  <p class="composer-hint">{{ productName }} may make mistakes. Verify important information.</p>
+  <p class="composer-hint">The Layer may provide inaccurate information. Verify critical data.</p>
 </footer>

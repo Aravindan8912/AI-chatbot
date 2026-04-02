@@ -48,13 +48,21 @@ public class ChatService : IChatService
     private static readonly Regex ElongatedGreetingToken = new(
         @"^(hi+|ha+i+|hey+|he+y+|hell+o+|h+i+|yo+|y+o+|sup|wassup)$",
         RegexOptions.IgnoreCase | RegexOptions.Compiled);
+    private static readonly Regex UrlRegex = new(
+        @"https?://[^\s]+",
+        RegexOptions.IgnoreCase | RegexOptions.Compiled);
 
     private readonly IOpenAIClient _openAIClient;
+    private readonly IWebsiteAnalyzer _websiteAnalyzer;
     private readonly ILogger<ChatService> _logger;
 
-    public ChatService(IOpenAIClient openAIClient, ILogger<ChatService> logger)
+    public ChatService(
+        IOpenAIClient openAIClient,
+        IWebsiteAnalyzer websiteAnalyzer,
+        ILogger<ChatService> logger)
     {
         _openAIClient = openAIClient;
+        _websiteAnalyzer = websiteAnalyzer;
         _logger = logger;
     }
 
@@ -67,6 +75,20 @@ public class ChatService : IChatService
         {
             _logger.LogInformation("Message classified as casual greeting");
             return new ChatResponseDto { Response = GreetingResponse };
+        }
+
+        if (TryExtractWebsiteUrl(userMessage, out var websiteUrl) && IsWebsiteAnalysisRequest(userMessage))
+        {
+            var details = await _websiteAnalyzer.GetWebsiteDetailsAsync(websiteUrl, cancellationToken);
+            if (details is not null)
+            {
+                _logger.LogInformation("Returning website analysis for {Host}", details.Host);
+                return new ChatResponseDto
+                {
+                    Response = BuildWebsiteDetailsResponse(details),
+                    Website = details
+                };
+            }
         }
 
         var messages = new List<object>
@@ -172,5 +194,66 @@ public class ChatService : IChatService
         }
 
         return builder.ToString().Trim();
+    }
+
+    private static bool TryExtractWebsiteUrl(string message, out Uri uri)
+    {
+        var match = UrlRegex.Match(message);
+        if (!match.Success)
+        {
+            uri = null!;
+            return false;
+        }
+
+        var raw = match.Value.TrimEnd('.', ',', ';', ':', '!', '?', ')', ']', '}', '"', '\'');
+        if (!Uri.TryCreate(raw, UriKind.Absolute, out var parsedUri))
+        {
+            uri = null!;
+            return false;
+        }
+
+        if (parsedUri.Scheme != Uri.UriSchemeHttp && parsedUri.Scheme != Uri.UriSchemeHttps)
+        {
+            uri = null!;
+            return false;
+        }
+
+        uri = parsedUri;
+        return true;
+    }
+
+    private static bool IsWebsiteAnalysisRequest(string message)
+    {
+        var normalized = NormalizeMessage(message);
+        if (string.IsNullOrWhiteSpace(normalized))
+            return false;
+
+        return normalized.Contains("analyze")
+               || normalized.Contains("analysis")
+               || normalized.Contains("website details")
+               || normalized.Contains("site details")
+               || normalized.Contains("link details")
+               || normalized.Contains("website")
+               || normalized.Contains("link");
+    }
+
+    private static string BuildWebsiteDetailsResponse(WebsiteDetailsDto details)
+    {
+        var lines = new List<string>
+        {
+            $"Website: {details.Url}",
+            $"Host: {details.Host}"
+        };
+
+        if (!string.IsNullOrWhiteSpace(details.FinalUrl))
+            lines.Add($"Final URL: {details.FinalUrl}");
+        if (details.StatusCode is not null)
+            lines.Add($"HTTP Status: {details.StatusCode}");
+        if (!string.IsNullOrWhiteSpace(details.Title))
+            lines.Add($"Title: {details.Title}");
+        if (!string.IsNullOrWhiteSpace(details.Description))
+            lines.Add($"Description: {details.Description}");
+
+        return string.Join(Environment.NewLine, lines);
     }
 }
